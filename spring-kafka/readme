@@ -1,0 +1,24 @@
+In order to run the spring kafka project we need to follow the following link
+
+https://github.com/netsurfingzone/Spring-Boot-Kafka-Producer-and-Consumer-Example
+
+https://www.netsurfingzone.com/kafka/spring-boot-kafka-producer-and-consumer-example-step-by-step-guide/
+
+
+
+Running zookeeper and kafka.
+
+Use below command to run zookeeper.
+
+C:\data\kafka>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+
+Use below command to run kafka.
+
+C:\data\kafka>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+Creating topic.
+
+C:\data\kafka>.\bin\windows\kafka-topics.bat –create –zookeeper localhost:2181 –replication-factor 1 –partitions 1 –topic netsurfingzone-topic-1
